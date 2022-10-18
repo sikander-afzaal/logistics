@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
+@layer utilities {
+  .clip-img-service {
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0 100%);
+  }
+  .clip-box-service {
+    clip-path: polygon(
+      52% 9%,
+      100% 0,
+      100% 30%,
+      100% 56%,
+      100% 100%,
+      72% 100%,
+      0 100%,
+      0 20%
+    );
+  }
+  .readmore {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+}
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+svg {
+  box-sizing: border-box !important;
+}
