@@ -2,7 +2,7 @@ import Btn from "../../Components/Btn";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div id="about" className="flex justify-center items-center w-full">
       <div className="flex justify-center xl:justify-between  items-center xl:flex-row flex-col w-full max-w-[1400px] px-5">
         <div className="relative -translate-y-[15%] z-40 flex items-end justify-center">
           <div className="border-8 border-solid border-orange w-full max-w-[500px]">

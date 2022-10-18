@@ -36,16 +36,25 @@ const Footer = () => {
           <h1 className="text-orange invisible pointer-events-none select-none text-[40px] font-bold lg:block hidden ">
             QLS
           </h1>
-          <a href="#" className="text-white text-base font-normal uppercase">
+          <a
+            href="#home"
+            className="text-white text-base font-normal uppercase"
+          >
             Home
           </a>
-          <a href="#" className="text-white text-base font-normal uppercase">
+          <a
+            href="#services"
+            className="text-white text-base font-normal uppercase"
+          >
             Services
           </a>
-          <a href="#" className="text-white text-base font-normal uppercase">
+          <a href="#faq" className="text-white text-base font-normal uppercase">
             FAQ
           </a>
-          <a href="#" className="text-white text-base font-normal uppercase">
+          <a
+            href="#about"
+            className="text-white text-base font-normal uppercase"
+          >
             About us
           </a>
         </div>

@@ -3,7 +3,7 @@ import { faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 
 const Hero = () => {
   return (
-    <div className="relative w-full">
+    <div id="home" className="relative w-full">
       <img
         className="w-full object-cover h-screen max-h-[750px] sm:max-h-[900px]"
         src="/hero.jpg"

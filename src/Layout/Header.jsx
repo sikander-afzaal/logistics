@@ -59,28 +59,28 @@ const Header = () => {
             <a
               onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
-              href="#"
+              href="#home"
             >
               Home
             </a>
             <a
               onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
-              href="#"
+              href="#services"
             >
               Services
             </a>
             <a
               onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
-              href="#"
+              href="#faq"
             >
               FAQ
             </a>
             <a
               onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
-              href="#"
+              href="#about"
             >
               About Us
             </a>

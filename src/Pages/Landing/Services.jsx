@@ -2,7 +2,10 @@ import ServiceBox from "../../Components/ServiceBox";
 
 const Services = () => {
   return (
-    <div className="flex justify-center items-center w-full mt-16">
+    <div
+      id="services"
+      className="flex justify-center items-center w-full mt-16"
+    >
       <div className="flex justify-center items-center w-full max-w-[1400px] flex-col px-5">
         <div className="flex justify-center items-center flex-col gap-2">
           <h6 className="text-orange text-base font-bold">Services</h6>

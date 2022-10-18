@@ -44,3 +44,6 @@ svg {
 .splide__arrow svg {
   fill: white;
 }
+html {
+  scroll-behavior: smooth;
+}
