@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         orange: "#F45C09",
         "black-900": "#232220",
+        gray: "#474645",
       },
       fontFamily: {
         sans: ["Oswald", ...defaultTheme.fontFamily.sans],

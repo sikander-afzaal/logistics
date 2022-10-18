@@ -31,3 +31,16 @@
 svg {
   box-sizing: border-box !important;
 }
+.splide__arrow {
+  opacity: 1;
+  background-color: gray;
+}
+.splide__arrow--next {
+  right: 0;
+}
+.splide__arrow--prev {
+  left: 0;
+}
+.splide__arrow svg {
+  fill: white;
+}
