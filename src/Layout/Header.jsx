@@ -15,6 +15,7 @@ const Header = () => {
       <h1 className="text-white text-[40px] font-bold block sm:hidden">QLS</h1>
       {/* //overlay--------------- */}
       <div
+        onClick={() => setOpenHeader(false)}
         className={`fixed top-0 sm:hidden left-0 h-screen w-full bg-black opacity-60 z-[90] ${
           openHeader ? "block" : "hidden"
         }`}
@@ -48,24 +49,28 @@ const Header = () => {
         <div className="flex-col sm:flex-row flex justify-start h-full sm:h-auto sm:p-0 py-16 sm:justify-center  items-center sm:items-center xsm:items-start gap-8 lg:gap-16 sm:w-auto w-full">
           <nav className="flex-col sm:flex-row flex justify-center items-center xsm:items-start sm:items-center gap-8 lg:gap-16">
             <a
+              onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
               href="#"
             >
               Home
             </a>
             <a
+              onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
               href="#"
             >
               Services
             </a>
             <a
+              onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
               href="#"
             >
               FAQ
             </a>
             <a
+              onClick={() => setOpenHeader(false)}
               className="text-black-900 text-lg md:text-xl uppercase font-semibold border-b-4 border-solid border-transparent hover:border-orange transition-all cursor-pointer"
               href="#"
             >
