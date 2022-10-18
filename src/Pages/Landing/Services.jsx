@@ -1,5 +1,3 @@
-import React from "react";
-
 import ServiceBox from "../../Components/ServiceBox";
 
 const Services = () => {

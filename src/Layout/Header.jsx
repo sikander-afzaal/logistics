@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import Btn from "../Components/Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
@@ -5,11 +7,17 @@ import {
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import Btn from "../Components/Btn";
 
 const Header = () => {
   const [openHeader, setOpenHeader] = useState(false);
+  useEffect(() => {
+    if (openHeader) {
+      document.querySelector("body").style.overflow = "hidden";
+    } else {
+      document.querySelector("body").style.overflow = "auto";
+    }
+  }, [openHeader]);
+
   return (
     <div className="w-full relative h-[80px] sm:h-[120px] bg-orange flex sm:justify-end justify-between items-center sm:items-start px-5 sm:py-6 sm:px-20">
       <h1 className="text-white text-[40px] font-bold block sm:hidden">QLS</h1>
@@ -39,7 +47,7 @@ const Header = () => {
         icon={openHeader ? faXmark : faBars}
       />
       <header
-        className={`shadow-md flex sm:h-[100px] transition-all z-20 ${
+        className={`shadow-md flex sm:h-[100px] transition-all duration-1000  z-20 ${
           openHeader ? "right-0" : "-right-[600px]"
         } px-5 sm:absolute h-screen sm:top-full top-0 sm:z-40 z-[100]  fixed sm:left-1/2 justify-between items-center max-w-[400px] w-full sm:max-w-[1400px] bg-white sm:-translate-x-1/2 sm:-translate-y-1/2`}
       >
