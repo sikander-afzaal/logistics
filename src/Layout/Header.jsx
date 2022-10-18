@@ -6,6 +6,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Btn from "../Components/Btn";
 
 const Header = () => {
   const [openHeader, setOpenHeader] = useState(false);
@@ -82,9 +83,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faUser} /> Login
             </p>
           </div>
-          <button className="uppercase font-bold text-white bg-orange h-[50px] md:h-[60px] px-3 md:px-6 text-lg md:text-xl">
-            Request a quote
-          </button>
+          <Btn text={"Request a quote"} />
         </div>
       </header>
     </div>
