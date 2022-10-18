@@ -18,18 +18,28 @@ const Footer = () => {
             illo aut rem totam neque deserunt necessitatibus fugiat sapiente
             enim?
           </p>
-          <div className="flex flex-col justify-start items-start gap-2">
+          <div className="flex flex-col justify-start items-start gap-2 w-full">
             <h1 className="uppercase text-white font-bold text-[25px]">
               Get In touch
             </h1>
-            <div className="flex justify-center items-center">
+
+            <form className="flex justify-center items-center gap-4 flex-col w-full max-w-[400px]">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="bg-gray h-[50px] md:h-[60px] pl-3 text-white text-base border-none w-full min-w-[200px]"
+              />
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="bg-gray h-[50px] md:h-[60px] pl-3 text-white text-base border-none w-full min-w-[200px]"
               />
+              <textarea
+                placeholder="Enter your message"
+                className="bg-gray h-[150px] resize-none pt-3 pl-3 text-white text-base border-none w-full min-w-[200px]"
+              ></textarea>
               <Btn text={"Submit"} />
-            </div>
+            </form>
           </div>
         </div>
         <div className="flex justify-start items-start flex-col gap-6">
